@@ -15,16 +15,16 @@
   
     <meta name="keywords" content="termux" />
   
-  <meta name="description" content="在开始前&lt;!- more –&gt; 请确保您已安装termux截止至发帖时（2021-04-18）termux的最新版本为v0.110您也可以在F-droid或[Github]](https:&#x2F;&#x2F;github.com&#x2F;termux&#x2F;termux-app)检查和下载新版本 开始下载所需工具‘’’bashapt install git vim -y‘’’若下载速度较慢，可以尝试更换国内清华源‘">
+  <meta name="description" content="在开始前&lt;!- more –&gt; 请确保您已安装termux截止至发帖时（2021-04-18）termux的最新版本为v0.110您也可以在F-droid或[Github]](https:&#x2F;&#x2F;github.com&#x2F;termux&#x2F;termux-app)检查和下载新版本 开始下载所需工具‘’’bash    apt install git vim -y‘’’若下载速度较慢，可以尝试更换国内">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Termux 安装archlinux">
 <meta property="og:url" content="http://example.com/2021/04/18/Termux-%E5%AE%89%E8%A3%85archlinux/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="在开始前&lt;!- more –&gt; 请确保您已安装termux截止至发帖时（2021-04-18）termux的最新版本为v0.110您也可以在F-droid或[Github]](https:&#x2F;&#x2F;github.com&#x2F;termux&#x2F;termux-app)检查和下载新版本 开始下载所需工具‘’’bashapt install git vim -y‘’’若下载速度较慢，可以尝试更换国内清华源‘">
+<meta property="og:description" content="在开始前&lt;!- more –&gt; 请确保您已安装termux截止至发帖时（2021-04-18）termux的最新版本为v0.110您也可以在F-droid或[Github]](https:&#x2F;&#x2F;github.com&#x2F;termux&#x2F;termux-app)检查和下载新版本 开始下载所需工具‘’’bash    apt install git vim -y‘’’若下载速度较慢，可以尝试更换国内">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/null">
 <meta property="article:published_time" content="2021-04-18T06:29:34.000Z">
-<meta property="article:modified_time" content="2021-04-18T07:38:22.599Z">
+<meta property="article:modified_time" content="2021-04-18T07:42:13.529Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="termux">
 <meta name="twitter:card" content="summary">
@@ -136,7 +136,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            1197
+                            1234
                         
                         字
                     </li>
@@ -145,24 +145,26 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1618731502599"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1618731733529"></time> 前，其中的内容可能需要更新。
                 </div>
                 
                 <hr />
                 <h2 id="在开始前"><a href="#在开始前" class="headerlink" title="在开始前"></a>在开始前</h2><p>&lt;!- more –&gt;</p>
 <p>请确保您已安装termux<br>截止至发帖时（2021-04-18）termux的最新版本为<strong>v0.110</strong><br>您也可以在F-droid或[Github]](<a target="_blank" rel="noopener" href="https://github.com/termux/termux-app">https://github.com/termux/termux-app</a>)检查和下载新版本</p>
-<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="下载所需工具"><a href="#下载所需工具" class="headerlink" title="下载所需工具"></a>下载所需工具</h3><p>‘’’bash<br>apt install git vim -y<br>‘’’<br>若下载速度较慢，可以尝试更换国内清华源<br>‘’’bash<br>sed -i ‘s@^(deb.*stable main)$@#\1\ndeb “<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24&quot;">https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24&quot;</a> stable main@’ $PREFIX/etc/apt/sources.list<br>sed -i ‘s@^(deb.*games stable)$@#\1\ndeb “<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24&quot;">https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24&quot;</a> games stable@’ $PREFIX/etc/apt/sources.list.d/game.list<br>sed -i ‘s@^(deb.*science stable)$@#\1\ndeb “<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24&quot;">https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24&quot;</a> science stable@’ $PREFIX/etc/apt/sources.list.d/science.list<br>apt update &amp;&amp; apt upgrade<br>‘’’</p>
-<h3 id="准备安装archlinux"><a href="#准备安装archlinux" class="headerlink" title="准备安装archlinux"></a>准备安装archlinux</h3><p>‘’’bash<br>git clone “<a target="_blank" rel="noopener" href="https://github.com/SDRausty/TermuxArch&quot;">https://github.com/SDRausty/TermuxArch&quot;</a></p>
-<p>cd TermuxArch<br>‘’’</p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="下载所需工具"><a href="#下载所需工具" class="headerlink" title="下载所需工具"></a>下载所需工具</h3><p>‘’’bash<br>    apt install git vim -y<br>‘’’<br>若下载速度较慢，可以尝试更换国内清华源<br>‘’’bash<br>    sed -i ‘s@^(deb.*stable main)$@#\1\ndeb “<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24&quot;">https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24&quot;</a> stable main@’ $PREFIX/etc/apt/sources.list<br>    sed -i ‘s@^(deb.*games stable)$@#\1\ndeb “<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24&quot;">https://mirrors.tuna.tsinghua.edu.cn/termux/game-packages-24&quot;</a> games stable@’ $PREFIX/etc/apt/sources.list.d/game.list<br>    sed -i ‘s@^(deb.*science stable)$@#\1\ndeb “<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24&quot;">https://mirrors.tuna.tsinghua.edu.cn/termux/science-packages-24&quot;</a> science stable@’ $PREFIX/etc/apt/sources.list.d/science.list<br>    apt update &amp;&amp; apt upgrade<br>‘’’</p>
+<h3 id="准备安装archlinux"><a href="#准备安装archlinux" class="headerlink" title="准备安装archlinux"></a>准备安装archlinux</h3><p>‘’’bash<br>    git clone “<a target="_blank" rel="noopener" href="https://github.com/SDRausty/TermuxArch&quot;">https://github.com/SDRausty/TermuxArch&quot;</a></p>
+<pre><code>cd TermuxArch
+</code></pre>
+<p>‘’’</p>
 <p>因为这个脚本默认从archlinux的官网下载压缩包，所以在国内速度会比较慢。<br>你可以进行以下操作来换源</p>
-<h4 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h4><p>‘’’bash<br>vim knownconfigurations.bash<br>‘’’<br>然后修改第23.31.39.47.54行（如果你不知道你的手机的架构的话）<br>将<strong>os.archlinuxarm.org</strong>修改为<strong>mirrors.tuna.tsinghua.edu.cn/archlinuxarm</strong><br>然后保存并退出<br>点击ESC后输入:wq并按下回车</p>
-<h4 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h4><p>‘’’bash<br>bash setupTermusArch.bash<br>‘’’</p>
+<h4 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h4><p>‘’’bash<br>    vim knownconfigurations.bash<br>‘’’<br>然后修改第23.31.39.47.54行（如果你不知道你的手机的架构的话）<br>将<strong>os.archlinuxarm.org</strong>修改为<strong>mirrors.tuna.tsinghua.edu.cn/archlinuxarm</strong><br>然后保存并退出<br>点击ESC后输入:wq并按下回车</p>
+<h4 id="运行脚本"><a href="#运行脚本" class="headerlink" title="运行脚本"></a>运行脚本</h4><p>‘’’bash<br>   bash setupTermusArch.bash<br>‘’’</p>
 <p>然后等待脚本运行完成就好了</p>
 <h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
 <li>注意大小写**</li>
 <li>注意自己当前目录是否正确</li>
 </ul>
-<p>如果在脚本运行的途中取消了，可以运行以下指令<br>‘’’bash<br>bash setupTermusArch.bash refresh<br>‘’’</p>
+<p>如果在脚本运行的途中取消了，可以运行以下指令<br>‘’’bash<br>    bash setupTermusArch.bash refresh<br>‘’’</p>
 <h3 id="结束"><a href="#结束" class="headerlink" title="结束"></a>结束</h3><p><a target="_blank" rel="noopener" href="https://lingluo-maple.github.io/">返回首页</a></p>
 
             </div>
