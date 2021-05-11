@@ -24,7 +24,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="http://lingluo-maple.github.io/null">
 <meta property="article:published_time" content="2021-05-09T04:29:14.000Z">
-<meta property="article:modified_time" content="2021-05-10T14:43:18.334Z">
+<meta property="article:modified_time" content="2021-05-11T13:30:52.580Z">
 <meta property="article:author" content="洛华">
 <meta property="article:tag" content="vscode">
 <meta name="twitter:card" content="summary">
@@ -142,7 +142,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            1085
+                            610
                         
                         字
                     </li>
@@ -151,7 +151,7 @@
             </header>
             <div class="kratos-post-content">
                 <div id="expire-alert" class="alert alert-warning hidden" role="alert">
-                    本文最后编辑于 <time datetime="1620657798334"></time> 前，其中的内容可能需要更新。
+                    本文最后编辑于 <time datetime="1620739852580"></time> 前，其中的内容可能需要更新。
                 </div>
                 
                 <hr />
@@ -160,10 +160,8 @@
 <p>首先在vscode中打开终端输入<code>pip install django-pylint</code><br>下载完毕后按<code>Ctrl</code>+<code>Shift</code>+<code>P</code>然后输入<strong>setting</strong>找到*Open Setting(JSON)*选项<br><img src="https://i.bmp.ovh/imgs/2021/05/c05ace7a7dbfd6e2.png" alt="如图"><br>然后在末尾加入（记得给上一行结尾加上逗号）</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&quot;python.linting.pylintArgs&quot;: [</span><br><span class="line">        &quot;--load-plugins=pylint_django&quot;,</span><br><span class="line">        <span class="string">&quot;--disable=C&quot;</span></span><br><span class="line">    ],</span><br></pre></td></tr></table></figure>
 
-<p>之后可能会显示<br><code>Django was not configured. For more information run pylint --load-plugins=pylint_django --help-msg=django-not-configured</code><br>在终端输入<code>pylint --load-plugins=pylint_django --help-msg=django-not-configured</code>后报错</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ pylint --load-plugins=pylint_django --help-msg=django-not-configured</span><br><span class="line">pylint : 无法将“pylint”项识别为 cmdlet、函数、脚本文件或可运行程序的名称。请检查名称的拼写，如果包括路径，请确保路径正确，然后再试一次。</span><br><span class="line">所在位置 行:1 字符: 1</span><br><span class="line">+ pylint --load-plugins=pylint_django --help-msg=django-not-configured</span><br><span class="line">+ ~~~~~~</span><br><span class="line">    + CategoryInfo          : ObjectNotFound: (pylint:String) [], CommandNotFoundException</span><br><span class="line">    + FullyQualifiedErrorId : CommandNotFoundException</span><br></pre></td></tr></table></figure>
-
-<p>你可以在setting.json中的<code>--disable</code>一行中加上<code>django-not-configured</code>更改后为<br><code>&quot;--disable=C, django-not-configured&quot;</code><br>另外，你也可以设置<code>&quot;--django-settings-module=path.settings&quot;</code>将path改为主程序路径，然后设置settings.py<br>参考<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/65761250/pylint-django-raising-error-about-django-not-being-configured-when-thats-not-th">这个</a></p>
+<p>之后可能会显示<br><code>Django was not configured. For more information run pylint --load-plugins=pylint_django --help-msg=django-not-configured</code></p>
+<p>你可以在setting.json中的<code>--disable</code>一行中加上<code>django-not-configured</code>更改后为<br><code>&quot;--disable=C, django-not-configured&quot;</code><br>另外，你也可以设置<code>&quot;--django-settings-module=path.settings&quot;</code>将path改为主程序路径，然后设置settings.py</p>
 
             </div>
             
@@ -255,7 +253,7 @@
                         <a class="tag-none-link" href="/tags/vscode/" rel="tag">vscode</a>
                     </div>
                     <div class="pull-date">
-                    <span>最后编辑：2021-05-10</span>
+                    <span>最后编辑：2021-05-11</span>
                     </div>
                 </div>
             </footer>
